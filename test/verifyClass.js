@@ -86,6 +86,7 @@ var verifyClass = function(constructor) {
         });
 
         it('makes new instances that delegate to appropriate prototype object', function() {
+          console.log(instance);
           expect(prototypeOfInstances.isPrototypeOf(instance)).to.be.true;
         });
 
